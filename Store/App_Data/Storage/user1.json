@@ -1,0 +1,75 @@
+{
+  "$type": "Store.Models.UserData, Store",
+  "userId": 1,
+  "Name": "Pelle",
+  "Email": "user@name.se",
+  "Password": "pw",
+  "PurchaseList": [
+    {
+      "$type": "Store.Models.UserData+Cart, Store",
+      "Id": 1,
+      "Name": "Babuska",
+      "Price": 3000
+    },
+    {
+      "$type": "Store.Models.UserData+Cart, Store",
+      "Id": 1,
+      "Name": "Babuska",
+      "Price": 3000
+    },
+    {
+      "$type": "Store.Models.UserData+Cart, Store",
+      "Id": 7,
+      "Name": "Baba",
+      "Price": 2000
+    },
+    {
+      "$type": "Store.Models.UserData+Cart, Store",
+      "Id": 7,
+      "Name": "Baba",
+      "Price": 2000
+    },
+    {
+      "$type": "Store.Models.UserData+Cart, Store",
+      "Id": 1,
+      "Name": "Babuska",
+      "Price": 3000
+    },
+    {
+      "$type": "Store.Models.UserData+Cart, Store",
+      "Id": 1,
+      "Name": "Babuska",
+      "Price": 3000
+    },
+    {
+      "$type": "Store.Models.UserData+Cart, Store",
+      "Id": 1,
+      "Name": "Babuska",
+      "Price": 3000
+    },
+    {
+      "$type": "Store.Models.UserData+Cart, Store",
+      "Id": 1,
+      "Name": "Babuska",
+      "Price": 3000
+    },
+    {
+      "$type": "Store.Models.UserData+Cart, Store",
+      "Id": 16,
+      "Name": "Maca",
+      "Price": 1200
+    },
+    {
+      "$type": "Store.Models.UserData+Cart, Store",
+      "Id": 16,
+      "Name": "Maca",
+      "Price": 1200
+    },
+    {
+      "$type": "Store.Models.UserData+Cart, Store",
+      "Id": 11,
+      "Name": "Govno",
+      "Price": 2100
+    }
+  ]
+}

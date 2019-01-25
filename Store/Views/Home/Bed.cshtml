@@ -1,0 +1,60 @@
+﻿@using Store.Models 
+@{
+    ViewBag.Title = "Bed";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    TempData["Page"] = "Bed";
+}
+
+<body>
+    <header class="main-header">
+        <h1>Balkan Möbler!</h1>
+    </header>
+    <nav class="navbar">
+        <div class="navtainer">
+            <ul>
+                <li><a href="~/Home/Index">Hem</a></li>
+                <li><a href="~/Login/Index">Varukorg</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <section id="main">
+            <h2>Sängar</h2>
+            <p>Här kan du hitta de bästa sängarna från Balkan! Vi har dubbel och singel sängar.</p>
+            <div class="grid-container">
+
+                @foreach (var fur in Furniture.GetData()) //Get the information from the furniture list.
+                {
+                    if (fur is Furniture.Bed) //Focus in on Bed/Sofa/Table in order to access their unique attributes.
+                    {//Then we call on each piece of information from the objects into the html display.
+
+                <div class="furnature-display">
+                    <img src="@(((Furniture.Bed)fur).Img)" /><h4> @(((Furniture.Bed)fur).Name)</h4><h5>Storlek: @(((Furniture.Bed)fur).Size)</h5><h5>Info: @(((Furniture.Bed)fur).Info)</h5>
+
+                    @if (Session["UserId"] != null) //If we are logged in then the price will be shown on the buy button.
+                    {
+                        <a class="link" onclick="alert('Varan har lagts till Varukorgen!')" href="../../Login/Buy?id=@fur.Id&Page=@TempData["Page"]">Pris: @(((Furniture.Bed)fur).Price) sek</a>
+                    }
+                    else//Otherwise we are taken to the login page.
+                    {
+                        <a class="link" href="~/Login/Index/">Logga in först!</a>
+                    }
+
+                </div>
+                    }
+                }
+            </div>
+        </section>
+        <aside id="sidebar">
+            <div id="sidetainer">
+                <ul>
+                    <li><a href="~/Home/Bed">Sängar</a></li>
+                    <li><a href="~/Home/Sofa">Soffor</a></li>
+                    <li><a href="~/Home/Table">Bord</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <footer class="main-footer">Copyright &copy; 2019 Edgar Palic</footer>
+</body>
+

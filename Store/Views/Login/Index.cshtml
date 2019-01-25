@@ -1,0 +1,98 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+
+<body>
+    <header class="main-header">
+        <h1>Balkan Möbler!</h1>
+    </header>
+<nav class="navbar">
+    <div class="navtainer">
+        <ul>
+            <li><a href="~/Home/Index">Home</a></li>
+            <li><a href="~/Login/Index">Varukorg</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+
+    @if (Session["UserId"] == null) //If you are not logged in then you get the login display to do so.
+    {
+        <h2>Login</h2>
+        <form method="post">
+            Email: <input type="text" name="email" />
+            Password: <input type="password" name="password" />
+            <input type="submit" value="Login" />
+        </form>
+        <br />
+    }
+    else //If you are logged in you will gain access to the shopping cart list.
+    {
+        <h2>Din shopping lista!</h2>
+
+        <table>
+            <tr>
+                <th>Pris</th>
+                <th>Vara</th>
+                <th>ID</th>
+            </tr>
+
+            @if (Model.PurchaseList != null) //If purchase list has items in it then it will show what you have bought. 
+            {
+                int sam = 0;
+                foreach (var pl in Model.PurchaseList)
+                {
+                    sam = sam + pl.Price; //we count from 0 each purchase to get the total amount in the end.
+                    <tr>
+                        <td>@pl.Price kr</td>
+                        <td>@pl.Name</td>
+                        <td>@pl.Id</td>
+                    </tr>
+                }
+                <tr>
+                    <th>Total Kostnad: @sam</th>
+                </tr>
+            }
+        </table>
+
+
+
+
+        <div class="grid-container">
+
+            <h1>Betalning</h1><div class="fluff"></div>
+            <h3>Kort</h3><select name="payment">
+                <option value="">Välj kort</option>
+                <option value="one">Visa</option>
+                <option value="two">Mastercard</option>
+            </select>
+            <div><h3>Kort Nummer</h3></div>
+            <div>
+                <input name="Cardnumber" type="text">
+            </div>
+
+            <div class="input-label"><h3>Kort datum</h3></div>
+            <div>
+                <input name="valid year" type="number" placeholder="Year">
+                <br />
+                <input name="valid month" type="number" placeholder="Month">
+            </div>
+
+            <div class="input-label"><h3>CVC-kod</h3></div>
+            <div>
+                <input name="CVC" type="number">
+            </div>
+        </div>
+        <form method="post" action="~/Login/Clear/">
+            <button type="submit" class="confirm" onclick="alert('Transaktion klar!')">Confirm!</button>
+            </form>
+            }
+
+    </div>
+
+    <footer class="main-footer">Copyright &copy; 2019 Edgar Palic</footer>
+</body>
+

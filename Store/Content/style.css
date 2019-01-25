@@ -1,0 +1,293 @@
+/*Body shape with a simple border and shadow*/
+body {
+	line-height: 1;
+	background-color: #ffffff;
+	margin: auto;
+	margin-bottom: 5%;
+	text-align: center;
+	width: 960px;
+	box-shadow: 3px 5px 30px #000000;
+}
+/*Descriptive text with an indentation*/
+p{
+	font-family: "Martel Sans";
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: justify;
+	letter-spacing: 1px;
+	text-indent: 20px;
+}
+/*used on booking form as sections title*/
+h1{
+	font-family: "Bungee Inline";
+	font-size: 50px;
+	color: #232425;
+}
+/*Big headline text used on all sites*/
+h2{
+	font-family: "Merienda One";
+	font-size: 30px;
+}
+/*Smaller headline text used on the booking form*/
+h3{
+	font-family: "Bungee Inline";
+	font-size: 14px;
+}
+h4 {
+	margin: 5px;
+	font-size: 14px;
+	font-family: "Martel Sans";
+}
+h5 {
+	margin: 5px;
+	font-size: 10px;
+	font-family: "Martel Sans";
+}
+/*The website banner*/
+.main-header{
+	background-color: #f5f5f5;
+	border: rgb(0, 0, 0);
+	border-style: solid;
+	border-width: 1px;
+	font-family: "Piedra";
+	color: #2c2b04;
+	text-shadow: 1px 1px rgb(122, 122, 122);
+	letter-spacing: 5px;
+	font-size: 20px;
+}
+/*A container holding the section and aside id's in a proper box*/
+.container {
+	overflow:hidden;
+	border: rgb(0, 0, 0);
+	border-style: solid;
+	border-width: 0 1px;
+	background-color: #f5f5f5;
+	padding: 0 0 50px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*The top menu navigation which contains a list*/
+.navbar{
+	background-color: #7fd4fc;
+	color: rgb(0, 0, 0);
+	border: rgb(0, 0, 0);
+	border-style: solid;
+	border-width: 0 0 1px 0;
+}
+/*a class for button borders in the top menu*/
+.navtainer{
+	margin:auto;
+	overflow:hidden;
+	border: rgb(0, 0, 0);
+	border-style: solid;
+	border-width: 0 1px;
+}
+/*unorganized list*/
+.navbar ul{
+	padding: 0;
+	list-style: none;
+}
+/*horizontal list with button border and shadow*/
+.navbar li {
+	display: inline;
+	padding: 5px 15px;
+	border-left: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	box-shadow: 5px 5px 10px #888888;
+}
+
+/*Buttons become red when you hover over them*/
+.navbar li:hover{
+	background-color: #d9faa4;
+}
+/*the link text modification*/
+.navbar a{
+	padding: 5px 5px;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	width: 60px;
+	font-size: 15px;
+	font-family: "Merienda One";
+}
+/*the main website information floating right of sidebar*/
+#main{
+	float:right;
+	width:70%;
+	padding: 0 1px;
+	box-sizing: border-box;
+}
+/*sidebar on the main page holding some links left of main section*/
+#sidebar{
+	float:left;
+	width:30%;
+	height: 600px;
+	padding: 10px;
+	box-sizing: border-box;
+	background: #f5f5f5;
+	color: rgb(0, 0, 0);
+	border-style: solid;
+	border-width: 0 1px 0 0;
+}
+/*sidebar list*/
+#sidetainer ul{
+	padding: 0;
+	list-style: none;
+}
+/*the text modification of the links in the sidebar list*/
+#sidetainer a{
+	color: rgb(0, 0, 0);
+	display: block;
+	text-decoration: none;
+	font-size: 25px;
+	font-family: "Merienda One";
+}
+/*list links are pushed away from each other making it more open*/
+#sidetainer li{
+	padding: 10px;
+}
+/*red background when hovering on sidebar links*/
+#sidetainer li:hover{
+	background-color: #d9faa4;
+}
+/*Similar to main but with whole page, no aside here*/
+.info{
+	background-color: #92fdbb;
+	border: solid;
+	border-width: 1px;
+	border-radius: 15px;
+	box-shadow: 3px 5px 25px #000000;
+}
+/*making all images be similar shape and size*/
+img{
+	border-radius: 5px;
+	border-bottom: solid;
+	border-width: 1px;
+	width: 300px;
+	height: 200px;
+}
+/*a little section between pic and form in the book page*/
+table {
+	background-color: #fffff0;
+	width: 90%;
+	font-family: "Martel Sans";
+	border-color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 15px;
+	margin:50px;
+}
+/*table text padding*/
+th, td{
+	padding: 5px;
+}
+
+/*website footer*/
+.main-footer{
+	background: #7fd4fc;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	padding: 5px;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+}
+input {
+	display: inline-block;
+	width: 1fr;
+	font-size: 1em;
+	padding: 8px;
+}
+
+.input-label{
+	padding-top: 3px;
+}
+/*the grid that shapes the booking form*/
+.grid-container {
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	/* ReSharper disable once CssNotResolved */
+	grid-gap: 1em;
+	width: 95%;
+	margin: 0 auto;
+}
+.furnature-display {
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px #131313;
+	width: 300px;
+	height: 300px;
+	text-align: left;
+}
+
+.link {
+	font-size: 15px;
+	background-color: #2e8b57;
+	color: white;
+	border: 1px solid #000000;
+	font-family: "Merienda One";
+	border-radius: 5px;
+	margin-left: 33%;
+	text-decoration: none;
+}
+/*the final button for payment*/
+.confirm{
+	margin-top: 50px;
+	width: 150px;
+	height: 50px;
+	font-size: 1.2em;
+	background-color: #7fd4fc;
+	color: white;
+	border: 1px solid #000000;
+	text-decoration: none;
+}
+/*payment button hovering color*/
+.confirm:hover{
+	background-color: #507fff;
+}
+/*this stuff makes it so that website adapts properly to smaller screens*/
+@media(max-width:600px){
+	#main{
+		width:100%;
+		float:none;
+	}
+	#sidebar{
+		width:100%;
+		float:none;
+	}
+	img{
+		width: 100%;
+		height: 70%;
+	}
+	.main-header{
+		letter-spacing: 5px;
+		font-size: 16px;
+	}
+	.info{
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	.grid-container{
+		grid-template-columns: 2fr;
+	}
+	.furnature-display {
+		margin-left: 10%;
+		height: 350px;
+	}
+}
+
+@media(max-width:960px){
+	body{
+		width:100%;
+	}
+}
+
+@media(max-width:760px){
+	.info{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}

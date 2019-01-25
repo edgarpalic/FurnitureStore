@@ -1,0 +1,78 @@
+﻿@using Store.Models
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body>
+    <header class="main-header">
+        <h1>Balkan Möbler!</h1>
+    </header>
+    <nav class="navbar">
+        <div class="navtainer">
+            <ul>
+                <li><a href="~/Home/Index">Hem</a></li>
+                <li><a href="~/Login/Index">Varukorg</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <section id="main">
+            <h2>Välkommen till Balkan Möbler!</h2>
+            <p>Här kan du hitta de bästa möblerna som vi hittade runt balkan. Vi har sängar, soffor och bord. Logga in för att kunna beställa varor.</p>
+            
+            <h2>Heta produkter just nu!</h2>
+
+            <div class="grid-container">
+
+                @foreach (var fur in Furniture.GetData())
+                {
+                    if (fur.BuyCount != 0) //Only display items which have been bought at least 2 times on the front page.
+                    {
+                        
+                        <div class="furnature-display">
+
+                                <img src="@(fur.Img)"/>
+                            <h4>@(fur.Name)</h4>
+
+                            @if (fur is Furniture.Table)
+                            {
+                                <h5>Material: @(((Furniture.Table) fur).Material)</h5>
+                            }
+                            @if (fur is Furniture.Bed)
+                            {
+                                <h5>Storlek: @(((Furniture.Bed) fur).Size)</h5>
+                            }
+                            @if (fur is Furniture.Sofa)
+                            {
+                                <h5>Sittplatser: @(((Furniture.Sofa) fur).Seats)</h5>
+                            }
+                            <h5>Info: @fur.Info</h5>
+
+                            @if (Session["UserId"] != null)
+                            {
+                                <a class="link" onclick="alert('Varan har lagts till Varukorgen!')" href="../../Login/Buy?id=@fur.Id&Page=@TempData["Page"]">Pris: @(fur.Price) sek</a>
+                            }
+                            else
+                            {
+                                <a class="link" href="~/Login/Index/">Logga in först!</a>
+                            }
+                        </div>
+                    }
+                }
+            </div>
+
+        </section>
+        <aside id="sidebar">
+            <div id="sidetainer">
+                <ul>
+                    <li><a href="~/Home/Bed">Sängar</a></li>
+                    <li><a href="~/Home/Sofa">Soffor</a></li>
+                    <li><a href="~/Home/Table">Bord</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <footer class="main-footer">Copyright &copy; 2019 Edgar Palic</footer>
+</body>
+

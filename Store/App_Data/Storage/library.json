@@ -1,0 +1,182 @@
+[
+  {
+    "$type": "Store.Models.Furniture+Bed, Store",
+    "Size": "Dubbel",
+    "Name": "Babuska",
+    "Price": 3000,
+    "Id": 1,
+    "Img": "/Content/images/bed1.jpg",
+    "Info": "Babuska är en av de starkaste sängarna i balkan. Gjord med äkta Bulgariskt stål.",
+    "BuyCount": 6
+  },
+  {
+    "$type": "Store.Models.Furniture+Sofa, Store",
+    "Seats": 3,
+    "Name": "Baba",
+    "Price": 2000,
+    "Id": 7,
+    "Img": "/Content/images/sofa1.jpg",
+    "Info": "En mjuk soffa som är perfekt för din rumpa.",
+    "BuyCount": 2
+  },
+  {
+    "$type": "Store.Models.Furniture+Table, Store",
+    "Material": "Metall",
+    "Name": "Maca",
+    "Price": 1200,
+    "Id": 16,
+    "Img": "/Content/images/table4.jpg",
+    "Info": "Maca är skapat från material från ett krashat amerikanskt flygplan.",
+    "BuyCount": 2
+  },
+  {
+    "$type": "Store.Models.Furniture+Sofa, Store",
+    "Seats": 2,
+    "Name": "Govno",
+    "Price": 2100,
+    "Id": 11,
+    "Img": "/Content/images/sofa5.jpg",
+    "Info": "Dina familje medlemmar kommer att älska Govno. Den luktar super gott.",
+    "BuyCount": 1
+  },
+  {
+    "$type": "Store.Models.Furniture+Bed, Store",
+    "Size": "Dubbel",
+    "Name": "Baklava",
+    "Price": 2500,
+    "Id": 2,
+    "Img": "/Content/images/bed2.jpg",
+    "Info": "Baklava kommer från Rumäniens hemsökta skogar, det sägs att folk kan höra röster på natten.",
+    "BuyCount": 0
+  },
+  {
+    "$type": "Store.Models.Furniture+Bed, Store",
+    "Size": "Dubbel",
+    "Name": "Lepa Brena",
+    "Price": 3500,
+    "Id": 3,
+    "Img": "/Content/images/bed3.jpg",
+    "Info": "Denna säng är en replika utav den Serbiska prinsessans Brenas säng. Lepa betyder 'Den vackra' på Serbiska.",
+    "BuyCount": 0
+  },
+  {
+    "$type": "Store.Models.Furniture+Bed, Store",
+    "Size": "Singel",
+    "Name": "Katyusha",
+    "Price": 1500,
+    "Id": 4,
+    "Img": "/Content/images/bedsingle1.jpg",
+    "Info": "Nämnd efter den Ryska rakt lastbilen eftersom den är super enkel men väldigt effektiv.",
+    "BuyCount": 0
+  },
+  {
+    "$type": "Store.Models.Furniture+Bed, Store",
+    "Size": "Singel",
+    "Name": "Sarma",
+    "Price": 1750,
+    "Id": 5,
+    "Img": "/Content/images/bedsingle2.jpg",
+    "Info": "Om du är överviktig och ensam så är denna säng perfekt för dig eftersom den klarar av 200kg.",
+    "BuyCount": 0
+  },
+  {
+    "$type": "Store.Models.Furniture+Bed, Store",
+    "Size": "Singel",
+    "Name": "Burek",
+    "Price": 2000,
+    "Id": 6,
+    "Img": "/Content/images/bedsingle3.jpg",
+    "Info": "Burek kom till Bosnien via den Ottomanska Imperiet, den är lätt att flytta runt och mycket stadig.",
+    "BuyCount": 0
+  },
+  {
+    "$type": "Store.Models.Furniture+Sofa, Store",
+    "Seats": 2,
+    "Name": "Dedo",
+    "Price": 2200,
+    "Id": 8,
+    "Img": "/Content/images/sofa2.jpg",
+    "Info": "Den mysigaste soffan som du kan annvända för att prata med din dejt.",
+    "BuyCount": 0
+  },
+  {
+    "$type": "Store.Models.Furniture+Sofa, Store",
+    "Seats": 3,
+    "Name": "Bre",
+    "Price": 2300,
+    "Id": 9,
+    "Img": "/Content/images/sofa3.jpg",
+    "Info": "En lädersoffa som kan klara sig i vilket väder som helst.",
+    "BuyCount": 0
+  },
+  {
+    "$type": "Store.Models.Furniture+Sofa, Store",
+    "Seats": 2,
+    "Name": "Ajde",
+    "Price": 2500,
+    "Id": 10,
+    "Img": "/Content/images/sofa4.jpg",
+    "Info": "Ajde är en väldigt lyxig soffa med två säten som var skapade med kärlek.",
+    "BuyCount": 0
+  },
+  {
+    "$type": "Store.Models.Furniture+Sofa, Store",
+    "Seats": 2,
+    "Name": "Majmun",
+    "Price": 2800,
+    "Id": 12,
+    "Img": "/Content/images/sofa6.jpg",
+    "Info": "Vår dyraste soffa, den är perfekt för en advokats kontor eller en världsledarens bibliotek.",
+    "BuyCount": 0
+  },
+  {
+    "$type": "Store.Models.Furniture+Table, Store",
+    "Material": "Träd",
+    "Name": "Kokosh",
+    "Price": 1000,
+    "Id": 13,
+    "Img": "/Content/images/table1.jpg",
+    "Info": "Ett bord som är perfekt för att skära bröd på.",
+    "BuyCount": 0
+  },
+  {
+    "$type": "Store.Models.Furniture+Table, Store",
+    "Material": "Träd",
+    "Name": "Krava",
+    "Price": 500,
+    "Id": 14,
+    "Img": "/Content/images/table2.jpg",
+    "Info": "Om du vill känna dig som Kung Arthur då ska du köpa ett runt bort som det här.",
+    "BuyCount": 0
+  },
+  {
+    "$type": "Store.Models.Furniture+Table, Store",
+    "Material": "Träd",
+    "Name": "Cuko",
+    "Price": 700,
+    "Id": 15,
+    "Img": "/Content/images/table3.jpg",
+    "Info": "Ett ganska stort bord som kan tåla mycket stryk, äkta balkan bord.",
+    "BuyCount": 0
+  },
+  {
+    "$type": "Store.Models.Furniture+Table, Store",
+    "Material": "Metall",
+    "Name": "Moskvich",
+    "Price": 2500,
+    "Id": 17,
+    "Img": "/Content/images/table5.jpg",
+    "Info": "Det dyraste och lyxigaste bordet i balkan, den är också strömförande.",
+    "BuyCount": 0
+  },
+  {
+    "$type": "Store.Models.Furniture+Table, Store",
+    "Material": "Glas",
+    "Name": "Rakija",
+    "Price": 2100,
+    "Id": 18,
+    "Img": "/Content/images/table6.jpg",
+    "Info": "Ett bord som ser till att inget hemligt sker under den.",
+    "BuyCount": 0
+  }
+]

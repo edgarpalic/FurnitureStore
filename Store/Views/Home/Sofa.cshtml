@@ -1,0 +1,60 @@
+﻿
+@using Store.Models
+@{
+    ViewBag.Title = "Sofa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    TempData["Page"] = "Sofa";
+}
+
+<body>
+    <header class="main-header">
+        <h1>Balkan Möbler!</h1>
+    </header>
+    <nav class="navbar">
+        <div class="navtainer">
+            <ul>
+                <li><a href="~/Home/Index">Hem</a></li>
+                <li><a href="~/Login/Index">Varukorg</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <section id="main">
+            <h2>Sängar</h2>
+            <p>Här kan du hitta de bästa sofforna från Balkan! Vi har soffor med två säten eller tre.</p>
+            <div class="grid-container">
+
+                @foreach (var fur in Furniture.GetData()) //Explained in Bed
+                {
+                    if (fur is Furniture.Sofa)
+                    {
+                        <div class="furnature-display">
+                            <img src="@(((Furniture.Sofa)fur).Img)" /><h4> @(((Furniture.Sofa)fur).Name)</h4><h5>Sittplatser: @(((Furniture.Sofa)fur).Seats)</h5><h5>Info: @(((Furniture.Sofa)fur).Info)</h5>
+
+                            @if (Session["UserId"] != null)
+                            {
+                                <a class="link" onclick="alert('Varan har lagts till Varukorgen!')" href="../../Login/Buy?id=@fur.Id&Page=@TempData["Page"]">Pris: @(((Furniture.Sofa)fur).Price) sek</a>
+                            }
+                            else
+                            {
+                                <a class="link" href="~/Login/Index/">Logga in först!</a>
+                            }
+
+                        </div>
+                    }
+                }
+            </div>
+        </section>
+        <aside id="sidebar">
+            <div id="sidetainer">
+                <ul>
+                    <li><a href="~/Home/Bed">Sängar</a></li>
+                    <li><a href="~/Home/Sofa">Soffor</a></li>
+                    <li><a href="~/Home/Table">Bord</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <footer class="main-footer">Copyright &copy; 2019 Edgar Palic</footer>
+</body>
+
