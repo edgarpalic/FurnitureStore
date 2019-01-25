@@ -45,18 +45,6 @@ namespace Store.Models
             return FurnitureList;
         }
 
- /*       public static List<Furniture> SixList()
-        {
-            foreach (Furniture Six in CreateData())
-            {
-                for (int x = 0; x < 5; x++)
-                {
-
-                }
-            }
-            return SixList();
-        }*/
-
         public static string filepath = HttpContext.Current.Server.MapPath("~/App_Data/Storage/library.json"); //Filepath turns a big link into a simple string which we use in json bellow.
 
         public static bool SaveData(List<Furniture> furniturelist)
