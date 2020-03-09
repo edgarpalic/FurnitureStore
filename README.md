@@ -1,10 +1,9 @@
 # Store
-Furniture store project. (in Swedish)
+A school project to make a furnature store website in C#. (In Swedish)
 
-A school project to make a furnature store website in C# and ASP.NET MVC.
+![alt1](https://i.imgur.com/k7D1hrH.jpg/200/200)
+![alt2](https://i.imgur.com/e0ruzD1.jpg/200/200)
 
-https://ibb.co/nMHCVXf
 
-https://ibb.co/tH58q4Y
 
 
